@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori Portal berita</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/style/nav-style.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav id="mynav" class="fixed-top">
+            <div class="container">
+                <div id="top-navbar">
+                    <div class="logo nav-left">
+                        <h3 class="bg-dark text-white p-1 m-0">Portal <span class="bg-white text-dark">Berita</span>
+                        </h3>
+                    </div>
+                    <div class="nav-right">
+                        <button class="btn p-0" onclick="toggleSearch()"><i class="bi bi-search fw-bold"
+                                style="font-size: 22px;"></i></button>
+                        <button id="btn-sidebar" onclick="toggleSidenav();" class="btn p-0"><i
+                                class="bi bi-filter-right fw-bold" style="font-size: 32px;"></i></button>
+                    </div>
+
+                </div>
+                <div id="bottom-navbar">
+                    <div class="search-layout">
+                        <form action="" class="d-flex justify-content-between">
+                            <input type="text" class="form-control me-2" placeholder="Search news ....">
+                            <button class="btn p-0" type="submit"><i class="bi bi-search fw-bold"
+                                    style="font-size: 22px;"></i></button>
+                        </form>
+                    </div>
+
+                </div>
+                <ul class="mynavbar-list">
+                    <button onclick="toggleSidenav();" class="btn p-0 position-absolute top-0 "><i
+                            class="bi bi-x fw-bold" style="font-size: 32px;"></i></button>
+                    <h3 class="bg-dark text-white p-1 m-0  position-absolute" style="top: 12px; right: 20px;">
+                        Portal <span class="bg-white text-dark">Berita</span>
+                    </h3>
+                    <hr class="m-0">
+                    <li class="mynav-item">
+                        <a href="index.html" class="mynav-link">Home</a>
+                    </li>
+                    <li class="mynav-item">
+                        <a href="kategori.html" class="mynav-link">Teknologi</a>
+                    </li>
+
+                    <li class="mynav-item">
+                        <a href="kategori.html" class="mynav-link">Bisnis</a>
+                    </li>
+                    <li class="mynav-item">
+                        <a href="kategori.html" class="mynav-link">Politik</a>
+
+                    </li>
+                    <li class="mynav-item">
+                        <a href="kategori.html" class="mynav-link">Olahraga</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- <hr class="m-0"> -->
+        </nav>
+    </header>
+    <section id="content">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Teknologi</li>
+            </ul>
+            <h3>Hot Topics Teknologi</h3>
+            <br>
+            <div class="card-hero position-relative mx-auto">
+                <img src="https://picsum.photos/870/400?random=2" alt="" class="img-hero">
+                <div class="layout-caption p-2 p-md-4">
+                    <p class="title-hero multi-line-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing.
+                    </p>
+                    <small class="me-5 text-white">12 Januari 2022</small>
+                    <small class="text-white">Nizar Rizkiana</small>
+                    <a href="artikel.html" class="stretched-link"></a>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div id="content-news" class="row">
+                <div class="col-12 col-md-9 mx-auto">
+                    <h3>Berita Teknologi Lainnya</h3>
+                    <hr>
+                    <div class="card border-0 w-100">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-4 col-4 position-relative">
+                                <img src="https://picsum.photos/640/360?random=4" class="img-fluid rounded my-auto"
+                                    alt="...">
+                            </div>
+                            <div class="col-md-8 col-8">
+                                <div class="card-body p-2 p-md-3">
+                                    <span class="text-danger fw-bold list-label">Teknologi</span>
+                                    <h5 class="card-title multi-line-truncate list-judul my-lg-4">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipisicing elit. Nulla,
+                                        dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <a href="artikel.html" class="stretched-link"></a>
+                                    <small class="text-muted penulis me-4">Nizar Rizkiana</small>
+                                    <small class="text-muted">7 February 2022</small>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m-2">
+                    </div>
+                    <div class="card border-0 w-100">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-4 col-4 position-relative">
+                                <img src="https://picsum.photos/640/360?random=5" class="img-fluid rounded my-auto"
+                                    alt="...">
+                            </div>
+                            <div class="col-md-8 col-8">
+                                <div class="card-body p-2 p-md-3">
+                                    <span class="text-danger fw-bold list-label">Teknologi</span>
+                                    <h5 class="card-title multi-line-truncate list-judul my-lg-4">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipisicing elit. Nulla,
+                                        dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <a href="artikel.html" class="stretched-link"></a>
+                                    <small class="text-muted penulis me-4">Nizar Rizkiana</small>
+                                    <small class="text-muted">7 February 2022</small>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m-2">
+                    </div>
+                    <div class="card border-0 w-100">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-4 col-4 position-relative">
+                                <img src="https://picsum.photos/640/360?random=6" class="img-fluid rounded my-auto"
+                                    alt="...">
+                            </div>
+                            <div class="col-md-8 col-8">
+                                <div class="card-body p-2 p-md-3">
+                                    <span class="text-danger fw-bold list-label">Teknologi</span>
+                                    <h5 class="card-title multi-line-truncate list-judul my-lg-4">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipisicing elit. Nulla,
+                                        dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <a href="artikel.html" class="stretched-link"></a>
+                                    <small class="text-muted penulis me-4">Nizar Rizkiana</small>
+                                    <small class="text-muted">7 February 2022</small>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m-2">
+                    </div>
+                    <div class="card border-0 w-100">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-4 col-4 position-relative">
+                                <img src="https://picsum.photos/640/360?random=7" class="img-fluid rounded my-auto"
+                                    alt="...">
+                            </div>
+                            <div class="col-md-8 col-8">
+                                <div class="card-body p-2 p-md-3">
+                                    <span class="text-danger fw-bold list-label">Teknologi</span>
+                                    <h5 class="card-title multi-line-truncate list-judul my-lg-4">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipisicing elit. Nulla,
+                                        dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <a href="artikel.html" class="stretched-link"></a>
+                                    <small class="text-muted penulis me-4">Nizar Rizkiana</small>
+                                    <small class="text-muted">7 February 2022</small>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m-2">
+                    </div>
+                    <div class="card border-0 w-100">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-4 col-4 position-relative">
+                                <img src="https://picsum.photos/640/360?random=8" class="img-fluid rounded my-auto"
+                                    alt="...">
+                            </div>
+                            <div class="col-md-8 col-8">
+                                <div class="card-body p-2 p-md-3">
+                                    <span class="text-danger fw-bold list-label">Teknologi</span>
+                                    <h5 class="card-title multi-line-truncate list-judul my-lg-4">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipisicing elit. Nulla,
+                                        dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <a href="artikel.html" class="stretched-link"></a>
+                                    <small class="text-muted penulis me-4">Nizar Rizkiana</small>
+                                    <small class="text-muted">7 February 2022</small>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="footer-body text-center">
+            <h5>Connect With Us</h5>
+            <div class="sosmed">
+                <h3 class="text-primary ms-4 me-4"><a href="" class="bi bi-facebook"></a></h3>
+                <h3 class="text-danger me-4"><i class="bi bi-instagram"></i></h3>
+                <h3 class="text-success me-4"><i class="bi bi-whatsapp"></i></h3>
+                <h3 class="text-danger me-4"><i class="bi bi-envelope"></i></h3>
+            </div>
+            <div class="info">
+                <h5>Tentang Kami</h5>
+                <p class="wrap-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorum aut tenetur
+                    ducimus maiores rem eligendi minima quisquam labore, quia provident nisi? Obcaecati, iste. Ipsam
+                    ullam temporibus asperiores! Illo, architecto?</p>
+            </div>
+            <p class="m-0 fw-bold">Developed By :</p>
+            <a href="">nizar.rizkiana007@gmail.com</a>
+
+        </div>
+        <div class="copyright">
+            <p class="text-muted">Copyright &copy; Portalberita.com 2022</p>
+        </div>
+    </footer>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/script/script-nav.js"></script>
+</body>
+
+</html>

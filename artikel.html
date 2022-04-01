@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori Portal berita</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/style/nav-style.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav id="mynav" class="fixed-top">
+            <div class="container">
+                <div id="top-navbar">
+                    <div class="logo nav-left">
+                        <h3 class="bg-dark text-white p-1 m-0">Portal <span class="bg-white text-dark">Berita</span>
+                        </h3>
+                    </div>
+                    <div class="nav-right">
+                        <button class="btn p-0" onclick="toggleSearch()"><i class="bi bi-search fw-bold"
+                                style="font-size: 22px;"></i></button>
+                        <button id="btn-sidebar" onclick="toggleSidenav();" class="btn p-0"><i
+                                class="bi bi-filter-right fw-bold" style="font-size: 32px;"></i></button>
+                    </div>
+
+                </div>
+                <div id="bottom-navbar">
+                    <div class="search-layout">
+                        <form action="" class="d-flex justify-content-between">
+                            <input type="text" class="form-control me-2" placeholder="Search news ....">
+                            <button class="btn p-0" type="submit"><i class="bi bi-search fw-bold"
+                                    style="font-size: 22px;"></i></button>
+                        </form>
+                    </div>
+
+                </div>
+                <ul class="mynavbar-list">
+                    <button onclick="toggleSidenav();" class="btn p-0 position-absolute top-0 "><i
+                            class="bi bi-x fw-bold" style="font-size: 32px;"></i></button>
+                    <h3 class="bg-dark text-white p-1 m-0  position-absolute" style="top: 12px; right: 20px;">
+                        Portal <span class="bg-white text-dark">Berita</span>
+                    </h3>
+                    <hr class="m-0">
+                    <li class="mynav-item">
+                        <a href="index.html" class="mynav-link">Home</a>
+                    </li>
+                    <li class="mynav-item">
+                        <a href="kategori.html" class="mynav-link">Teknologi</a>
+                    </li>
+
+                    <li class="mynav-item">
+                        <a href="kategori.html" class="mynav-link">Bisnis</a>
+                    </li>
+                    <li class="mynav-item">
+                        <a href="kategori.html" class="mynav-link">Politik</a>
+
+                    </li>
+                    <li class="mynav-item">
+                        <a href="kategori.html" class="mynav-link">Olahraga</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- <hr class="m-0"> -->
+        </nav>
+    </header>
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <div class="header-artikel">
+                        <span class="text-danger fw-bold">Teknologi</span>
+                        <br>
+                        <h3 class="title-artikel">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
+                            qui sed inventore!</h3>
+                        <br>
+                        <small class="text-muted">Nizar Rizkiana</small> | <small class="text-muted">12 Maret
+                            2022</small> | <small class="text-muted"><i class="bi bi-eye"></i>&nbsp;120000</small>
+                    </div>
+                    <hr>
+                    <div class="w-100 text-center">
+                        <img src="https://picsum.photos/750/370?random=2" alt="" class="image-artikel">
+                    </div>
+                    <hr>
+                    <div class="body-artikel px-2">
+                        <p class="text-justify" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Sit, officiis facilis velit fugit
+                            odio quis! Sed sint repellendus soluta ipsam quod voluptate quis velit officiis dolorum
+                            placeat nam incidunt, repudiandae itaque corrupti, accusantium, cumque veritatis
+                            perspiciatis deserunt. Asperiores earum sapiente nostrum nulla nam voluptatibus labore
+                            fugiat reiciendis molestias iusto ut culpa recusandae excepturi, eaque deserunt nesciunt
+                            quia error. Et dolore animi maiores expedita vitae sapiente quaerat natus atque ut libero,
+                            hic dolor officia qui consequatur nostrum perferendis tempora illo quas repellendus
+                            praesentium nobis velit quasi. Pariatur impedit, asperiores officiis deleniti sapiente
+                            accusamus unde minus? Sequi architecto sapiente, molestiae a iusto, distinctio omnis ab sint
+                            vel minus nobis provident, eius animi quos vitae illum aut? Aliquam, atque commodi quidem
+                            quaerat expedita tempore facilis voluptas qui quibusdam, saepe vel eum eaque! Ut quasi nam
+                            molestiae corrupti at unde officia omnis! Harum voluptas aperiam ex, sint adipisci eveniet
+                            tempora odit expedita similique non error dolor accusamus quod, praesentium at voluptatem
+                        </p>
+                        <p>
+                            sunt nisi natus temporibus ea suscipit totam doloremque illo soluta! Facilis, tenetur harum
+                            in, mollitia placeat fugit doloribus quam saepe earum exercitationem excepturi qui. Corrupti
+                            doloribus necessitatibus voluptatem, architecto culpa voluptate qui sequi veritatis, rerum
+                            sit nulla quidem aliquam dolores, quaerat molestias voluptatibus!</p>
+                    </div>
+                </div>
+
+                <!-- sidebar content -->
+                <div class="col-lg-4 col-12 border-start">
+                    <h3>Rekomendasi</h3>
+                    <hr>
+                    <div class="card border-0 w-100">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-4 col-4 position-relative">
+                                <img src="https://picsum.photos/640/360?random=5" class="img-fluid rounded my-auto"
+                                    alt="...">
+                            </div>
+                            <div class="col-md-8 col-8">
+                                <div class="card-body p-2 p-md-3">
+                                    <h5 class="card-title multi-line-truncate list-judul mb-md-2">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipisicing elit. Nulla,
+                                        dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <a href="artikel.html" class="stretched-link"></a>
+                                    <small class="text-muted penulis me-4">Nizar Rizkiana</small>
+                                    <small class="text-muted">7 February 2022</small>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m-2">
+                    </div>
+                    <div class="card border-0 w-100">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-4 col-4 position-relative">
+                                <img src="https://picsum.photos/640/360?random=4" class="img-fluid rounded my-auto"
+                                    alt="...">
+                            </div>
+                            <div class="col-md-8 col-8">
+                                <div class="card-body p-2 p-md-3">
+                                    <h5 class="card-title multi-line-truncate list-judul mb-md-2">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipisicing elit. Nulla,
+                                        dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <a href="artikel.html" class="stretched-link"></a>
+                                    <small class="text-muted penulis me-4">Nizar Rizkiana</small>
+                                    <small class="text-muted">7 February 2022</small>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m-2">
+                    </div>
+                    <div class="card border-0 w-100">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-4 col-4 position-relative">
+                                <img src="https://picsum.photos/640/360?random=3" class="img-fluid rounded my-auto"
+                                    alt="...">
+                            </div>
+                            <div class="col-md-8 col-8">
+                                <div class="card-body p-2 p-md-3">
+                                    <h5 class="card-title multi-line-truncate list-judul mb-md-2">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipisicing elit. Nulla,
+                                        dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <a href="artikel.html" class="stretched-link"></a>
+                                    <small class="text-muted penulis me-4">Nizar Rizkiana</small>
+                                    <small class="text-muted">7 February 2022</small>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m-2">
+                    </div>
+                    <div class="card border-0 w-100">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-4 col-4 position-relative">
+                                <img src="https://picsum.photos/640/360?random=2" class="img-fluid rounded my-auto"
+                                    alt="...">
+                            </div>
+                            <div class="col-md-8 col-8">
+                                <div class="card-body p-2 p-md-3">
+                                    <h5 class="card-title multi-line-truncate list-judul mb-md-2">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipisicing elit. Nulla,
+                                        dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <a href="artikel.html" class="stretched-link"></a>
+                                    <small class="text-muted penulis me-4">Nizar Rizkiana</small>
+                                    <small class="text-muted">7 February 2022</small>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m-2">
+                    </div>
+                    <div class="card border-0 w-100">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-4 col-4 position-relative">
+                                <img src="https://picsum.photos/640/360?random=1" class="img-fluid rounded my-auto"
+                                    alt="...">
+                            </div>
+                            <div class="col-md-8 col-8">
+                                <div class="card-body p-2 p-md-3">
+                                    <h5 class="card-title multi-line-truncate list-judul mb-md-2">Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipisicing elit. Nulla,
+                                        dolores?Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                    <a href="artikel.html" class="stretched-link"></a>
+                                    <small class="text-muted penulis me-4">Nizar Rizkiana</small>
+                                    <small class="text-muted">7 February 2022</small>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="footer-body text-center">
+            <h5>Connect With Us</h5>
+            <div class="sosmed">
+                <h3 class="text-primary ms-4 me-4"><a href="" class="bi bi-facebook"></a></h3>
+                <h3 class="text-danger me-4"><i class="bi bi-instagram"></i></h3>
+                <h3 class="text-success me-4"><i class="bi bi-whatsapp"></i></h3>
+                <h3 class="text-danger me-4"><i class="bi bi-envelope"></i></h3>
+            </div>
+            <div class="info">
+                <h5>Tentang Kami</h5>
+                <p class="wrap-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorum aut tenetur
+                    ducimus maiores rem eligendi minima quisquam labore, quia provident nisi? Obcaecati, iste. Ipsam
+                    ullam temporibus asperiores! Illo, architecto?</p>
+            </div>
+            <p class="m-0 fw-bold">Developed By :</p>
+            <a href="">nizar.rizkiana007@gmail.com</a>
+
+        </div>
+        <div class="copyright">
+            <p class="text-muted">Copyright &copy; Portalberita.com 2022</p>
+        </div>
+    </footer>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/script/script-nav.js"></script>
+</body>
+
+</html>
